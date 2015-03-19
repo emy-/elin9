@@ -1,0 +1,79 @@
+html {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+}
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	background-color: #E6E6F0;
+/*	background: url("../images/graphy.png");
+	background-repeat: repeat;*/
+}
+
+#canvasDiv {
+	/*border: 15px dashed hotpink;*/
+	/*position: fixed;
+	bottom: 0;*/
+}
+
+#markers {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+#markers ul {
+	margin: 0;
+	padding-left: 0;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+#markers li {
+	display: table-cell;
+}
+
+#markers a {
+	color: black;
+	padding: 5px 20px;
+}
+
+#markers a:hover {
+	color: gray;
+	background-color: #333333;
+}
+
+#eraser {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+/*
+ * Reference: https://css-tricks.com/body-border/
+ */
+#top, #bottom, #left, #right {
+	background: #6D7482;
+	position: fixed;
+}
+#left, #right {
+	top: 0;
+	bottom: 0;
+	width: 10px;
+}
+#left {	left: 0; }
+#right { right: 0; }
+#top, #bottom {
+	left: 0;
+	right: 0;
+	height: 10px;
+}
+#top { top: 0; }
+#bottom { bottom: 0; }
+@media
+only screen and (max-width: 500px),
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+{ #top, #bottom, #left, #right { display: none; } }

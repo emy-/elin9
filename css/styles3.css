@@ -1,0 +1,65 @@
+html {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
+
+body {
+	margin: 0 auto;
+	width: 75%;
+	max-width: 333px;
+	background-color: black;
+	background: url("../images/bg.png");
+	background-repeat: repeat;
+}
+
+.name, aside {
+	display: table-cell;
+	vertical-align: top;
+}
+
+#page-center {
+	position: absolute;
+	top: 30%;
+	left: 33%;
+}
+
+.name {
+	text-align: right;
+	text-shadow: 2px 2px black;
+	font-size: 100px;
+	padding-right: 15px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #262626;
+}
+
+.menu {
+	text-align: left;
+}
+
+.menu ul {
+	margin: 0;
+	padding-top: 36px;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.fa {
+	color: white;
+	padding-top: 0;
+	padding-bottom: 55px;
+	padding-left: 35px;
+	padding-right: 40px;
+}
+
+.fa:hover {
+	color: #262626;
+}

@@ -1,0 +1,87 @@
+html {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	display: block;
+}
+
+body {
+	margin: 0 auto;
+	width: 75%;
+	max-width: 720px;
+	text-align: center;
+	background-color: #DFEFF0;
+}
+
+#page-center {
+	top: 80px;		/*need to scale to window height*/
+	width: 400px;	/*need to scale to window width*/
+	min-height: 100px;
+	margin: 0 auto;
+	position: relative;
+}
+
+h1 {
+	margin-bottom: 0;
+	width: 100%;
+	text-align: center;
+	text-shadow: 2px 2px white;
+	font-size: 96px;
+}
+
+a {
+	color: gray;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+footer {
+	/*padding-top: 320px;	/*need to scale to window height*/
+	top: 300px;
+	position: relative;
+}
+
+footer p {
+	margin: 0;
+	text-shadow: 1px 1px #C2C4C3;
+}
+
+#bg-img {
+	min-height: 100%;
+	min-width: 1024px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+.menu {
+	text-align: center;
+}
+
+.menu ul {
+	margin: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.menu a {
+	color: black;
+	display: block;
+	padding: 5px 20px;
+	text-align: center;
+}
+
+.menu a:hover {
+	color: white;
+}
