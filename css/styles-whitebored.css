@@ -3,6 +3,7 @@ html {
 	font-weight: bold;
 	font-size: 20px;
 	color: black;
+	cursor: crosshair;
 }
 
 body {
@@ -27,23 +28,25 @@ body {
 
 #markers ul {
 	margin: 0;
-	padding-left: 0;
+	padding: 0;
 	list-style-type: none;
 	border-collapse: collapse;
 }
 
 #markers li {
 	display: table-cell;
+	margin: 0;
+	padding: 0;
 }
 
 #markers a {
-	color: black;
-	padding: 5px 20px;
+	opacity: 1.0;
+	margin: 0;
+	padding: 0;	
 }
 
 #markers a:hover {
-	color: gray;
-	background-color: #333333;
+	opacity: 0.75;
 }
 
 #eraser {

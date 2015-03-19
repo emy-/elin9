@@ -21,23 +21,19 @@
 		<div id="bottom"></div>
 
 		<div id="canvasDiv">
-			<script type="text/javascript"> $(document).ready(function() {
-				prepareCanvas();
-			});</script>
-
 			<div id="markers">
 					<ul>
-						<li class="marker"><img src="images/marker-red.png" alt="red marker"></li>
-						<li class="marker"><img src="images/marker-orange.png" alt="orange marker"></li>
-						<li class="marker"><img src="images/marker-yellow.png" alt="yellow marker"></li>
-						<li class="marker"><img src="images/marker-green.png" alt="green marker"></li>
-						<li class="marker"><img src="images/marker-blue.png" alt="blue marker"></li>
-						<li class="marker"><img src="images/marker-purple.png" alt="purple marker"></li>
-						<li class="marker"><img src="images/marker-black.png" alt="black marker"></li>
+						<li><a href="#" onclick="javascript: colorClick(colorRed);"><img id="markerRed" src="images/marker-red.png" alt="red marker"></a></li>
+						<li><a href="#" onclick="javascript: colorClick(colorOrange);"><img id="markerOrange" src="images/marker-orange.png" alt="orange marker"></a></li>
+						<li><a href="#" onclick="javascript: colorClick(colorYellow);"><img id="markerYellow" src="images/marker-yellow.png" alt="yellow marker"></a></li>
+						<li><a href="#" onclick="javascript: colorClick(colorGreen);"><img id="markerGreen" src="images/marker-green.png" alt="green marker"></a></li>
+						<li><a href="#" onclick="javascript: colorClick(colorBlue);"><img id="markerBlue" src="images/marker-blue.png" alt="blue marker"></a></li>
+						<li><a href="#" onclick="javascript: colorClick(colorPurple);"><img id="markerPurple" src="images/marker-purple.png" alt="purple marker"></a></li>
+						<li><a href="#" onclick="javascript: colorClick(colorBlack);"><img id="markerBlack" src="images/marker-black.png" alt="black marker"></a></li>
 					</ul>
 			</div>
 			<div id="eraser">
-				<img src="images/eraser.png" alt="eraser">
+				<a href="#" onclick="javascript: colorClick(colorBackground, erase);"><img id="erase" src="images/eraser.png" alt="eraser"></a>
 			</div>
 		</div>
 	</body>

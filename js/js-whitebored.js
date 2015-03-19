@@ -5,14 +5,28 @@
 var canvas;
 var canvasHeight;
 var canvasWidth;
+var clickColor = new Array();
 var clickDrag = new Array();
 var clickX = new Array();
 var clickY = new Array();
+var colorRed = "#FF0000";
+var colorOrange = "#FF6600";
+var colorYellow = "#FFFF00";
+var colorGreen = "#009900";
+var colorBlue = "#0000FF";
+var colorPurple = "#9900FF";
+var colorBlack = "#000000";
+var colorBackground = "#E6E6F0";
 var context;
+var currentColor = colorBlue;
 var paint = false;
 
+$(document).ready(function() {
+	prepareCanvas();
+});
+
 function prepareCanvas() {
-	canvasHeight = $(window).height(); 	//need to account for resizing windows, especially from small to larger size
+	canvasHeight = $(window).height(); 	//have yet to account for resizing windows, especially from small to larger size
 	canvasWidth = $(window).width();
 	var canvasDiv = document.getElementById('canvasDiv');
 	canvas = document.createElement('canvas');
@@ -58,18 +72,30 @@ function addClick(x, y, dragging) {
 	clickX.push(x);
 	clickY.push(y);
 	clickDrag.push(dragging);
+	clickColor.push(currentColor); //record chosen color when user clicks
 }
 
 function clearCanvas() {
 	context.clearRect(0, 0, canvasWidth, canvasHeight);
 }
 
+/* 
+ * Changes currentColor when user clicks certain marker (anchor element in HTML)
+ */
+function colorClick(col) {
+	currentColor = col;
+}
+
+/*
+ * Each time redraw() is called, the canvas is cleared and everything is redrawn
+ * Stroke properties (color, shape, width) set
+ * For every time we recorded as a marker on paper, we are going to draw a line
+ */
 function redraw() {
 	context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
 
-	context.strokeStyle = "#1000BF";
 	context.lineJoin = "round";
-	context.lineWidth = 5;
+	context.lineWidth = 6;
 	
 	for(var i=0; i < clickX.length; i++) {		
 		context.beginPath();
@@ -80,6 +106,7 @@ function redraw() {
 		}
 		context.lineTo(clickX[i], clickY[i]);
 		context.closePath();
+		context.strokeStyle = clickColor[i];
 		context.stroke();
 	}
 }
