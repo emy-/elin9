@@ -7,6 +7,7 @@ var canvasHeight;
 var canvasWidth;
 var clickColor = new Array();
 var clickDrag = new Array();
+var clickSize = new Array();
 var clickX = new Array();
 var clickY = new Array();
 var colorRed = "#FF0000";
@@ -19,7 +20,10 @@ var colorBlack = "#000000";
 var colorBackground = "#E6E6F0";
 var context;
 var currentColor = colorBlue;
+var currentSize = 7;
 var paint = false;
+var radiusMarker = 7;
+var radiusEraser = 40;
 
 $(document).ready(function() {
 	prepareCanvas();
@@ -73,6 +77,7 @@ function addClick(x, y, dragging) {
 	clickY.push(y);
 	clickDrag.push(dragging);
 	clickColor.push(currentColor); //record chosen color when user clicks
+	clickSize.push(currentSize); //record chosen size
 }
 
 function clearCanvas() {
@@ -82,8 +87,19 @@ function clearCanvas() {
 /* 
  * Changes currentColor when user clicks certain marker (anchor element in HTML)
  */
-function colorClick(col) {
+function colorClick(col, markerCol) {
 	currentColor = col;
+
+	if(col === colorBackground) {
+		currentSize = radiusEraser;
+	} else {
+		currentSize = radiusMarker;
+	}
+
+	// markerCol = "'#"+markerCol+"'";
+	// $(markerCol).click(function(){
+ //        $(markerCol).fadeTo(10, 0.5);
+ //    });
 }
 
 /*
@@ -92,10 +108,9 @@ function colorClick(col) {
  * For every time we recorded as a marker on paper, we are going to draw a line
  */
 function redraw() {
-	context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
+	context.clearRect(0, 0, context.canvas.width, context.canvas.height); //Clears the canvas
 
 	context.lineJoin = "round";
-	context.lineWidth = 6;
 	
 	for(var i=0; i < clickX.length; i++) {		
 		context.beginPath();
@@ -107,6 +122,7 @@ function redraw() {
 		context.lineTo(clickX[i], clickY[i]);
 		context.closePath();
 		context.strokeStyle = clickColor[i];
+		context.lineWidth = clickSize[i];
 		context.stroke();
 	}
 }
