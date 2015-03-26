@@ -67,6 +67,10 @@ function prepareCanvas() {
 	$('#canvas').mouseleave(function(e){
 		paint = false;
 	});
+
+	$('#pulldownTab').click(function() {
+		$('#dropdownWindow').slideToggle(200);
+	});
 }
 
 /*

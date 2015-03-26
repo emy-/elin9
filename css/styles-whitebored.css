@@ -5,6 +5,7 @@ html {
 	color: black;
 	height: 100%;
 	cursor: crosshair;
+	overflow: hidden;
 }
 
 body {
@@ -17,20 +18,28 @@ body {
 }
 
 #canvasDiv {
-	overflow: hidden;
 	height: 100vh;
 	/*border: 15px dashed hotpink;*/
 	/*position: fixed;
 	bottom: 0;*/
 }
 
-#magnet {
+#magnet-share {
 	position: fixed;
-	right: 40px;
-	top: 40px;
+	right: 75px;
+	top: 20px;
 	-ms-transform: rotate(20deg); /* IE 9 */
     -webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
     transform: rotate(20deg);
+}
+
+#magnet-info {
+	position: fixed;
+	right: 20px;
+	top: 100px;
+	-ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+    transform: rotate(15deg);
 }
 
 #markers {
@@ -52,21 +61,21 @@ body {
 	padding: 3px;
 }
 
-#markers a , #eraser a, #magnet a {
+#markers a , #eraser a, #magnets a {
 	opacity: 1.0;
 	margin: 0;
 	padding: 0;	
 }
 
-#markers a:hover, #eraser a:hover, #magnet a:hover {
+#markers a:hover, #eraser a:hover, #magnets a:hover {
 	opacity: 0.75;
 }
 
-#markers a:active, #eraser a:active, #magnet a:active {
+#markers a:active, #eraser a:active, #magnets a:active {
 	opacity: 0.5;
 }
 
-#markers a:focus, #eraser a:focus, #magnet a:focus {
+#markers a:focus, #eraser a:focus, #magnets a:focus {
 	/*opacity: 0.75;*/
 }
 
@@ -77,6 +86,8 @@ body {
 	bottom: 0;
 	right: 0;
 }
+
+/*******************************************************/
 
 /*
  * Reference: https://css-tricks.com/body-border/
@@ -103,3 +114,40 @@ body {
 only screen and (max-width: 500px),
 only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
 { #top, #bottom, #left, #right { display: none; } }
+
+/*******************************************************/
+
+#pulldownTab {
+	color: #DEDEDE;
+	background-color: black;
+	width: 100px;
+	height: 20px;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px 1px gray;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#dropdownWindow {
+	padding: 20px;
+	background-color: #D5DBEB;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	display: none;
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	height: 80%;
+}
+
+/*******************************************************/
+
+#about {
+	text-align: center;
+	cursor: auto;
+}
