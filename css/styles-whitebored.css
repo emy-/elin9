@@ -67,15 +67,15 @@ body {
 	padding: 0;	
 }
 
-#markers a:hover, #eraser a:hover, #magnets a:hover {
+#markers a:hover, #eraser a:hover, #magnets a:hover, input:hover {
 	opacity: 0.75;
 }
 
-#markers a:active, #eraser a:active, #magnets a:active {
+#markers a:active, #eraser a:active, #magnets a:active, input:active {
 	opacity: 0.5;
 }
 
-#markers a:focus, #eraser a:focus, #magnets a:focus {
+#markers a:focus, #eraser a:focus, #magnets a:focus, input:focus {
 	/*opacity: 0.75;*/
 }
 
@@ -133,16 +133,33 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 }
 
 #dropdownWindow {
-	padding: 20px;
+	padding: 15px;
 	background-color: #D5DBEB;
-	border-bottom: 2px solid black;
-	border-left: 2px solid black;
-	border-right: 2px solid black;
+	border: 2px solid black;
 	display: none;
 	width: 70%;
 	margin: 0 auto;
 	text-align: center;
+	font-size: 16px;
 	height: 80%;
+}
+
+#dropdownWindow h2 {
+	margin-bottom: 0;
+}
+
+#dropdownWindow p {
+	margin: 8px;
+}
+
+.ui-dialog-titlebar-close {
+	visibility: hidden;
+}
+
+.ui-widget-overlay {
+  opacity: 0.9;
+  filter: Alpha(Opacity=90);
+  background-color: black;
 }
 
 /*******************************************************/
@@ -150,4 +167,25 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 #about {
 	text-align: center;
 	cursor: auto;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+h3 {
+	margin: 0;
+}
+
+a {
+	color: gray;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+a:focus, button:focus, img:focus, input:focus {
+	outline: 0;
 }

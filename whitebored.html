@@ -10,8 +10,35 @@
 		<![endif]-->
 		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/js-whitebored.js"></script>
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<script>
+		/*
+		 * jQuery UI Dialog: Open Dialog on Click
+		 * http://salman-w.blogspot.com/2013/05/jquery-ui-dialog-examples.html
+		 */
+		$(function() {
+			$("#dropdownWindow").dialog({
+				autoOpen: false,
+				modal: true,
+				width: "70%",
+				focus: true,
+				position: { my: "center", at: "top", of: window },
+				focus: function( event, ui ) {},
+			});
+			$("#magnet-info").on("click", function() {
+				$("#dropdownWindow").dialog("open");
+				$('.ui-widget-overlay').css('background', 'black');
+			});
+			$("#canvasDiv").on("click", function(e) {
+				e.preventDefault();
+				$("#dropdownWindow").dialog("close");
+			});
+		});
+		</script>
 	</head>
 
 	<body>
@@ -20,12 +47,28 @@
 		<div id="top"></div>
 		<div id="bottom"></div>
 
-		<div id="dropdownWindow">VOILA! :D</div>
-		<div id="pulldownTab">info</div>
+		<div id="dropdownWindow">
+			<h1>Welcome to WhiteBored! </h1>
+			<h3>A place where you can share your Boredom with the world</h3>
+
+			<h2>About WhiteBored</h2>
+			<p>WhiteBored is intended to be a simulation of the communal whiteboards that you pass by in hallways or in lounges, on which people can draw or write something to leave for others to see and perhaps respond to and build upon. It is not meant to be a super fancy drawing app -- many of those already exist. Thus (for now), you are supplied with 7 marker colors and an eraser, each with a fixed size. But the creativity you supply for yourself is endless!</p>
+
+			<h2>What's Next</h2>
+			<p>Mobile devices, tablets, and any other touch screen devices are not yet supported. They definitely will be as soon as I figure it out.</p>
+			<p>Also, as you might have discovered, the "Share a Link!" magnet is not working yet. Hopefully soon, I will figure out how to implement the functionality of storing unique WhiteBoreds with a unique URL for you to share with your friends. I am also trying to figure out how to allow real-time collaboration on a WhiteBored so that multiple people can draw on a Bored simultaneously and see the changes in real-time. Exciting ambitions!</p>
+
+			<h2>Want a New WhiteBored?</h2>
+			<p>Go to <a href="http://bit.ly/whitebored">bit.ly/whitebored</a> to start a new WhiteBored! Share the link!</p>
+
+			<h2>Contact</h2>
+			<p>For more information, questions, or suggestions, email Emy Lin at <a href="mailto:emy.lin.email@gmail.com?Subject=WhiteBored!" target="_top">emy.lin.email@gmail.com</a>
+		</div>
+		<!-- <div id="pulldownTab">info</div> -->
 
 		<div id="magnets">
 			<a href="#"><img id="magnet-share" src="images/magnet-share.png" alt="share a link"></a>
-			<a href="whitebored-about.html"><img id="magnet-info" src="images/magnet-info.png" alt="more info"></a>
+			<input type="image" id="magnet-info" class="info" src="images/magnet-info.png" alt="more info">
 		</div>
 
 		<div id="canvasDiv">
