@@ -20,7 +20,7 @@
 				<div id="main-menu">
 					<ul>
 						<li><a href="index4.php">About</a></li>
-						<li><a href="projects.php">Projects</a></li>
+						<li id="proj-tab"><a href="projects.php">Projects</a></li>
 						<li><a href="contact.php">Contact</a></li>
 					</ul>
 				</div>

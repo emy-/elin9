@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Emy Lin</title>
+		<title>Emy Lin - Contact</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/styles4.css">
 		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>

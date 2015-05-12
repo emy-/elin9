@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Emy Lin - Projects</title>
+		<title>Emy Lin - Shutterstock Intern</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/styles4.css">
 		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
@@ -36,30 +36,21 @@
 				</ul>
 			</div>
 
-			<div class="content-proj" id="content-projects">
-				<a href="rhema.php">
-				<img src="images/rhema.jpg" alt="Rhema on Google Glass">
-				</a>
+			<div class="content-proj">
+				<h2>Job Description</h2>
+				<p>The UX Research Intern will be responsible for running the product discovery and usability research sessions for Shutterstock. S/he will work directly with UX researchers, product owners, UX designers and developers to define scope of the research, the research plan, and synthesis of findings. During this internship, the intern will learn to recruit research participants, write interview guides for qualitative research, work with various stakeholders and product teams to answer research questions and synthesize results, and moderate qualitative research sessions.</p>
 
-				<a href="shutterstock_intern.php">
-				<img src="images/shutterstock.jpg" alt="Shutterstock logo">
-				</a>
-
-				<a href="http://csug.rochester.edu/u/elin9/whitebored.html" target="_blank">
-				<img src="images/whitebored.png" alt="WhiteBored">
-				</a>
-
-				<a href="https://sites.google.com/site/rochciteammia" target="_blank">
-				<img src="images/MIS.png" alt="Mind Input System">
-				</a>
-
-				<a href="http://emy-lin.rochestercs.org/project3/index.php" target="_blank">
-				<img src="images/4AWiC.png" alt="4 Awesome Women in Computing logo">
-				</a>
+				<h2>Responsibilities</h2>
+				<ul>
+					<li>Recruit user research participants (invitations, screener, follow-up, scheduling, confirmation, payment, tracking)</li>
+					<li>Prepare testing rooms (set-up technology and seating)</li>
+					<li>Learn and utilize research tools</li>
+					<li>Participate in strategy / planning meetings</li>
+					<li>Gather and synthesize data</li>
+					<li>Provide proactive insights</li>
+					<li>Develop presentations</li>
+				</ul>
 			</div>
-
-			<footer>
-			</footer>
 		</div>
 
 		<script src="http://code.jquery.com/jquery.js"></script>
