@@ -159,7 +159,7 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 .ui-widget-overlay {
   opacity: 0.9;
   filter: Alpha(Opacity=90);
-  background-color: black;
+  /*background-color: black;*/
 }
 
 /*******************************************************/

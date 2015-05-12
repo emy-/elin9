@@ -1,0 +1,109 @@
+a {
+	color: #7F7FFF;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000066;
+}
+
+body {
+	background-color: white;
+	margin: 0 auto;
+	width: 100%;
+}
+
+html {
+	color: black;
+	font-family:  'Trebuchet MS', Helvetica, sans-serif;
+	font-size: 18px;	
+}
+
+i {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	padding-top: 30px;
+}
+
+.center {
+	text-align: center;
+}
+
+.content {
+	color: black;
+	margin: 0 auto;
+	text-align: center;
+	width: 70%;
+}
+
+.current {
+	background-color: #000066;
+}
+
+.paragraph {
+	display: block;
+}
+
+#contact-content {
+	padding-left: 30px;
+	padding-top: 40px;
+}
+
+#contact-content p {
+	padding-bottom: 10px;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+#header {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#img-me {
+	padding-left: 40px;
+}
+
+#main-menu {
+	background-color: black;
+	font-size: 20px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#main-menu a {
+	color: white;
+	padding: 3px 20px;
+}
+
+#main-menu a:hover {
+	color: #7F7FFF;
+}
+
+#main-menu li {
+	display: inline-block;
+}
+
+#main-menu ul {
+	list-style-type: none;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#name {
+	font-size: 90px;
+	margin: 0 auto;
+	padding-left: 35px;
+	text-align: center;
+	text-shadow: 2px 2px #7F7FFF;
+	width: 75%;
+}
+
+#name a {
+	color: black;
+}

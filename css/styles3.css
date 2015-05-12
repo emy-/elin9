@@ -1,8 +1,10 @@
-html {
-	font-family: 'Alegreya Sans SC', sans-serif;
-	font-weight: bold;
-	font-size: 20px;
+a {
 	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #262626;
 }
 
 body {
@@ -14,15 +16,45 @@ body {
 	background-repeat: repeat;
 }
 
+html {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
+
+.fa {
+	color: white;
+	padding-top: 0;
+	padding-bottom: 30px;
+	padding-left: 35px;
+}
+
+.fa:hover {
+	color: #262626;
+}
+
+.fafont {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	padding-left: 30px;
+}
+
+.menu {
+	text-align: left;
+}
+
+.menu ul {
+	margin: 0;
+	padding-top: 25px;
+	padding-left: 0;
+	list-style-type: none;
+}
+
 .name, aside {
 	display: table-cell;
 	vertical-align: top;
-}
-
-#page-center {
-	position: absolute;
-	top: 30%;
-	left: 33%;
 }
 
 .name {
@@ -32,34 +64,8 @@ body {
 	padding-right: 15px;
 }
 
-a {
-	color: white;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #262626;
-}
-
-.menu {
-	text-align: left;
-}
-
-.menu ul {
-	margin: 0;
-	padding-top: 36px;
-	padding-left: 0;
-	list-style-type: none;
-}
-
-.fa {
-	color: white;
-	padding-top: 0;
-	padding-bottom: 55px;
-	padding-left: 35px;
-	padding-right: 40px;
-}
-
-.fa:hover {
-	color: #262626;
+#page-center {
+	position: absolute;
+	top: 30%;
+	left: 33%;
 }
