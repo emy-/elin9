@@ -10,11 +10,11 @@
 	</head>
 
 	<body>
-		<div id="container">
+		<div class="container">
 			<?php include "inc/header.inc" ?>
 			<div id="header">
 				<div id="name">
-					<a href="index4.php">Emy Lin</a>
+					<h1><a href="index4.php">Emy Lin</a></h1>
 				</div>
 
 				<div id="main-menu" class="menu">
@@ -26,13 +26,14 @@
 				</div>
 			</div>
 
+			<?php include "inc/project-menu.inc" ?>
 			<div id="project-menu" class="menu">
 				<ul>
 					<li><a href="http://csug.rochester.edu/u/elin9/whitebored.html" target="_blank">WhiteBored</a></li>
 					<li><a href="shutterstock_intern.php">Shutterstock Internship</a></li>
 					<li><a href="rhema.php">RHEMA</a></li>
-					<li><a href="https://sites.google.com/site/rochciteammia" target="_blank">CSC 212 Class Project</a></li>
-					<li><a href="http://emy-lin.rochestercs.org/project3/index.php" target="_blank">CSC 170 Class Project</a></li>
+					<li><a href="https://sites.google.com/site/rochciteammia" target="_blank">HCI Class Project</a></li>
+					<li><a href="http://emy-lin.rochestercs.org/project3/index.php" target="_blank">Web Design Class Project</a></li>
 				</ul>
 			</div>
 
@@ -45,9 +46,9 @@
 				<ul>
 					<li><a href="http://www.rochester.edu/newscenter/wearable-technology-can-help-with-public-speaking-95552/" target="_blank">Rochester Newscenter</a></li>
 					<li><a href="http://nymag.com/next/2015/03/meet-the-star-of-ted-2020-glass-app-public-speaking-coach.html" target="_blank">New York Magazine</a></li>
-					<li><a href="http://www.sciencedaily.com/releases/2015/03/150330173917.htm" target="_blank">Science Daily</a></li>
 					<li><a href="http://wxxinews.org/post/smart-glasses-app-helps-tame-fear-public-speaking" target="_blank">NPR: All Things Considered</a></li>
 					<li><a href="http://wxxinews.org/post/watch-smart-glasses-app-helps-tame-fear-public-speaking" target="_blank">WXXI News</a></li>
+					<li><a href="http://www.sciencedaily.com/releases/2015/03/150330173917.htm" target="_blank">Science Daily</a></li>
 					<li><a href="http://phys.org/news/2015-03-wearable-technology.html&usg=ALkJrhhvvos8PPskpDXmonGpeAIBIHZi4Q/" target="_blank">Phys.org</a></li>
 					<li><a href="http://www.engadget.com/2015/03/31/google-glass-app-rhema/?ncid=rss_truncated&utm_source=dlvr.it&utm_medium=twitter" target="_blank">Engadget</a></li>
 				</ul>
@@ -58,6 +59,12 @@
 					<li><a href="http://www.tekniikkatalous.fi/ict/alylasit+voivat+pian+auttaa+esiintymaan+yleison+edessa++kehitteilla+oleva+jarjestelma+antaa+vinkkeja+ja+selkeyttaa+puhetta/a1056448" target="_blank">Finland</a></li>
 				</ul>
 			</div>
+
+			<?php include "inc/footer.inc" ?>
+			<footer>
+				<p>This site is currently under construction.</p>
+				<p>©2015 Emy Lin</p>
+			</footer>
 		</div>
 
 		<script src="http://code.jquery.com/jquery.js"></script>

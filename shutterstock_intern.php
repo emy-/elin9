@@ -10,11 +10,11 @@
 	</head>
 
 	<body>
-		<div id="container">
+		<div class="container">
 			<?php include "inc/header.inc" ?>
 			<div id="header">
 				<div id="name">
-					<a href="index4.php">Emy Lin</a>
+					<h1><a href="index4.php">Emy Lin</a></h1>
 				</div>
 
 				<div id="main-menu" class="menu">
@@ -26,19 +26,26 @@
 				</div>
 			</div>
 
+			<?php include "inc/project-menu.inc" ?>
 			<div id="project-menu" class="menu">
 				<ul>
 					<li><a href="http://csug.rochester.edu/u/elin9/whitebored.html" target="_blank">WhiteBored</a></li>
 					<li><a href="shutterstock_intern.php">Shutterstock Internship</a></li>
 					<li><a href="rhema.php">RHEMA</a></li>
-					<li><a href="https://sites.google.com/site/rochciteammia" target="_blank">CSC 212 Class Project</a></li>
-					<li><a href="http://emy-lin.rochestercs.org/project3/index.php" target="_blank">CSC 170 Class Project</a></li>
+					<li><a href="https://sites.google.com/site/rochciteammia" target="_blank">HCI Class Project</a></li>
+					<li><a href="http://emy-lin.rochestercs.org/project3/index.php" target="_blank">Web Design Class Project</a></li>
 				</ul>
 			</div>
 
 			<div class="content-proj">
+				<h2>UX Research Intern @ Shutterstock</h2>
+				<p>During summer of 2015, I will be a UX Research Intern at <a href="http://www.shutterstock.com/" target="_blank">Shutterstock</a>! 
+					Come explore <a href="http://officesnapshots.com/2014/03/24/inside-shutterstocks-new-empire-state-building-offices/">NYC</a> with me!</p>
+
 				<h2>Job Description</h2>
-				<p>The UX Research Intern will be responsible for running the product discovery and usability research sessions for Shutterstock. S/he will work directly with UX researchers, product owners, UX designers and developers to define scope of the research, the research plan, and synthesis of findings. During this internship, the intern will learn to recruit research participants, write interview guides for qualitative research, work with various stakeholders and product teams to answer research questions and synthesize results, and moderate qualitative research sessions.</p>
+				<p>The UX Research Intern will be responsible for running the product discovery and usability research sessions for Shutterstock. 
+					She will work directly with UX researchers, product owners, UX designers and developers to define scope of the research, the research plan, and synthesis of findings. 
+					During this internship, the intern will learn to recruit research participants, write interview guides for qualitative research, work with various stakeholders and product teams to answer research questions and synthesize results, and moderate qualitative research sessions.</p>
 
 				<h2>Responsibilities</h2>
 				<ul>
@@ -51,6 +58,12 @@
 					<li>Develop presentations</li>
 				</ul>
 			</div>
+
+			<?php include "inc/footer.inc" ?>
+			<footer>
+				<p>This site is currently under construction.</p>
+				<p>©2015 Emy Lin</p>
+			</footer>
 		</div>
 
 		<script src="http://code.jquery.com/jquery.js"></script>

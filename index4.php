@@ -10,11 +10,11 @@
 	</head>
 
 	<body>
-		<div id="container">
+		<div class="container">
 			<?php include "inc/header.inc" ?>
 			<div id="header">
 				<div id="name">
-					<a href="index4.php">Emy Lin</a>
+					<h1><a href="index4.php">Emy Lin</a></h1>
 				</div>
 
 				<div id="main-menu">
@@ -29,13 +29,18 @@
 			<div class="content">
 				<img id="img-me" src="images/EmyLin_circle.png" alt="Emy Lin">
 
-				<p>Hi! My name is Emy Lin. I am a rising senior double majoring in Computer Science and Linguistics at the University of Rochester.
-				I am a research assistant in the Rochester Human Computer Interaction (ROC HCI) research group. This summer, I will be interning at Shutterstock.</p>
+				<p>Hi there! My name is Emy Lin. I am a rising senior ('16) double majoring in Computer Science and Linguistics at the University of Rochester.
+				I am interested in pursuing work or a graduate degree in the field of HCI/UX.
+				Currently, I am a research assistant in the Rochester Human Computer Interaction (ROC HCI) research group. 
+				This summer (2015), I will be interning at Shutterstock. 
+				</p>
 
-				<p class="next-paragraph">Find more information about my activities under <a href="projects.php">Projects</a>. </p>
+				<p class="next-paragraph">Find more information about my activities under <a href="projects.php">Projects</a>.</p>
 			</div>
 
-			<footer>
+			<?php include "inc/footer.inc" ?>
+			<footer class="no-scroll-footer">
+				<p>©2015 Emy Lin</p>
 			</footer>
 		</div>
 

@@ -11,11 +11,11 @@
 	</head>
 
 	<body>
-		<div id="container">
+		<div class="container">
 			<?php include "inc/header.inc" ?>
 			<div id="header">
 				<div id="name">
-					<a href="index4.php">Emy Lin</a>
+					<h1><a href="index4.php">Emy Lin</a></h1>
 				</div>
 
 				<div id="main-menu">
@@ -35,7 +35,9 @@
 				<p>Connect with me <span class="paragraph">on <a href="https://www.linkedin.com/in/emylin">LinkedIn</a></span></p>
 			</div>
 
-			<footer>
+			<?php include "inc/footer.inc" ?>
+			<footer class="no-scroll-footer">
+				<p>©2015 Emy Lin</p>
 			</footer>
 		</div>
 

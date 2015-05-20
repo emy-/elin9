@@ -1,6 +1,6 @@
 <div id="header">
 	<div id="name">
-		<a href="index4.php">Emy Lin</a>
+		<h1><a href="index4.php">Emy Lin</a></h1>
 	</div>
 
 	<div id="main-menu">
